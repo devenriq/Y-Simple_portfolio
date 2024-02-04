@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Enrique Palomino",
-    "label": "Full Stack Developer",
+    "label": "Full Stack Developer con más de dos años de experiencia.",
     "image": "",
     "email": "devenriq@gmail.com",
     "phone": "(51) 977 133 653",
     "url": "Building it...",
-    "summary": "A summary of Enrique Palomino",
+    "info": "A summary of Enrique Palomino",
     "location": {
       "address": "Prog. Habitacional Dean Valdivia Lt.3",
       "postalCode": "CA 94115",
@@ -16,9 +16,19 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "X",
         "username": "enrigios",
         "url": "https://twitter.com/enrigios"
+      },
+      {
+        "network": "Github",
+        "username": "devenriq",
+        "url": "https://github.com/devenriq"
+      },
+      {
+        "network": "Linkedin",
+        "username": "devenriq",
+        "url": "https://www.linkedin.com/in/devenriq/"
       }
     ]
   },
