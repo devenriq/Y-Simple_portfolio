@@ -65,11 +65,11 @@
     {
       "institution": "ICPNA",
       "url": "https://www.ucss.edu.pe/",
-      "area": "Ingeniería Civil",
-      "studyType": "Bachiller",
+      "area": "Idiomas",
+      "studyType": "Diploma",
       "startDate": "2016-06-03",
       "endDate": "2020-09-28",
-      "score": "13.0",
+      "score": "15.0",
       "courses": ["DB1101 - Basic SQL"]
     },
     {
@@ -108,7 +108,7 @@
       "area": "Certified Tech Developer",
       "studyType": "Diploma",
       "startDate": "2023-05-11",
-      "endDate": "2024-12-14",
+      "endDate": null,
       "score": "In progress",
       "courses": ["DB1101 - Basic SQL"]
     }
