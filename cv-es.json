@@ -125,12 +125,34 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Tailwind",
+        "React",
+        "Angular",
+        "NodeJS",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "AWS"
+      ]
     },
     {
       "name": "Ingeniería Civil",
       "level": "Master",
-      "keywords": ["AutoCAD", "AutoCAD Civil 3D", "JavaScript"]
+      "keywords": [
+        "AutoCAD",
+        "AutoCAD Civil 3D",
+        "JavaScript",
+        "MS Office Suit",
+        "ETABS",
+        "Revit",
+        "SAP2000"
+      ]
     }
   ],
   "languages": [
