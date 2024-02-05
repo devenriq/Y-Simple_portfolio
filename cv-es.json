@@ -126,6 +126,11 @@
       "name": "Web Development",
       "level": "Master",
       "keywords": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "Ingeniería Civil",
+      "level": "Master",
+      "keywords": ["AutoCAD", "AutoCAD Civil 3D", "JavaScript"]
     }
   ],
   "languages": [
