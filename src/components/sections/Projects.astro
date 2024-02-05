@@ -1,7 +1,60 @@
 ---
 import Section from "@/components/Section.astro";
+
+import { projects } from "@/cv";
 ---
 
 <Section title="Projects">
-  <></>
+  <section>
+    {
+      projects.map(({ name, startDate, endDate, description, highlights }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
+
+        const years = `${startYear} - ${endYear}`;
+
+        return (
+          <article>
+            <header>
+              <div>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+              <div>{years}</div>
+            </header>
+            <footer>
+              {highlights.map((highlight) => (
+                <p>{highlight}</p>
+              ))}
+            </footer>
+          </article>
+        );
+      })
+    }
+  </section>
 </Section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  article {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 250px;
+    padding: 10px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h3:hover {
+  }
+  footer p {
+    font-size: 0.85rem;
+  }
+</style>
