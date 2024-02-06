@@ -18,6 +18,11 @@ const SOCIAL_ICONS: Record<string,any>={
   Linkedin,
   X
 }
+
+const linkedInfo = profiles.find(({network})=>network ==='LinkedIn')
+const linkedUrl = linkedInfo?.url
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(` - `)
 ---
 
 <Section>
@@ -29,37 +34,41 @@ const SOCIAL_ICONS: Record<string,any>={
         <WorldMap/>
         {city}, {region}
       </span>
-      <footer>
-        {
-          email &&
-            <a href=`mailto:${email}` title = { `Enviar un correo electrónico a ${name} al correo ${email}` } >
-              <Mail/>
-            </a>
-        }
-        {
-          email &&
-            <a href=`tel:${phone}` title = { `Llamar por teléfono a ${name} al número ${phone}` } >
-              <Phone />
-            </a>
-        }
-        {
-          profiles.map(({network,url,username})=>{
-            const Icon = SOCIAL_ICONS[network]
+      <footer class="print accesible-info">
+        {printInfo}
+      </footer>
+      <footer class="no-print">
+          {
+            email &&
+              <a href=`mailto:${email}` title = { `Enviar un correo electrónico a ${name} al correo ${email}` } >
+                <Mail/>
+              </a>
+          }
+          {
+            email &&
+              <a href=`tel:${phone}` title = { `Llamar por teléfono a ${name} al número ${phone}` } >
+                <Phone />
+              </a>
+          }
+          {
+            profiles.map(({network,url,username})=>{
+              const Icon = SOCIAL_ICONS[network]
 
-            return(
-              <a
-                href={url}
-                title={`Visitar el perfil de ${username} en ${network}`}
-                target={url}
-                rel="No se"
-              >
+              return(
+                <a
+                  href={url}
+                  title={`Visitar el perfil de ${username} en ${network}`}
+                  target={url}
+                  rel="No se"
+                >
 
-              <Icon/>
+                <Icon/>
 
-                </a>
-            )
-          })
-        }
+                  </a>
+              )
+            })
+          }
+
       </footer>
     </div>
     <figure>
@@ -112,6 +121,8 @@ const SOCIAL_ICONS: Record<string,any>={
     }
 
     footer{
+      color: #555;
+      font-size: .75rem;
       display: flex;
       gap: 4px;
       margin-top: 8px;
